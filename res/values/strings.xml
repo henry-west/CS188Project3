@@ -4,5 +4,8 @@
     <string name="app_name">CS188Project3</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_midwest_philosophy">MidwestPhilosophy</string>
+    <string name="title_activity_states">States</string>
+    <string name="title_activity_iowa">Iowa</string>
 
 </resources>
