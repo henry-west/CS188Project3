@@ -1,8 +1,8 @@
 package com.example.cs188project3;
 
+
 import java.util.Locale;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -13,29 +13,30 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
-public class Iowa extends FragmentActivity {
+import com.example.cs188project3.Iowa.PlaceholderFragment4;
 
+public class WalkingTaco extends FragmentActivity {
+	
 	ViewPager myViewPager;
 	SectionsPagerAdapter mSectionsPagerAdapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_iowa);
-
+		setContentView(R.layout.activity_walking_taco);
+		
 		mSectionsPagerAdapter = new SectionsPagerAdapter(this, myViewPager);
 
 		// Set up the ViewPager with the sections adapter.
-		myViewPager = (ViewPager) findViewById(R.id.vpPager);
+		myViewPager = (ViewPager) findViewById(R.id.vpPager2);
 		myViewPager.setAdapter(mSectionsPagerAdapter);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.iowa, menu);
+		getMenuInflater().inflate(R.menu.walking_taco, menu);
 		return true;
 	}
 
@@ -50,9 +51,7 @@ public class Iowa extends FragmentActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
 	
-
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
 		public SectionsPagerAdapter(FragmentActivity fm, ViewPager pager) {
@@ -74,18 +73,15 @@ public class Iowa extends FragmentActivity {
 			else if (position == 1) {
 				return PlaceholderFragment2.newInstance(position + 2);
 			}
-			else if (position == 2) {
-				return PlaceholderFragment3.newInstance(position + 3);
-			}
 			else {
-				return PlaceholderFragment4.newInstance(position +4);
+				return PlaceholderFragment4.newInstance(position +3);
 			}
 		}
 
 		@Override
 		public int getCount() {
 			// Show 4 total pages.
-			return 4;
+			return 3;
 		}
 
 		@Override
@@ -95,24 +91,19 @@ public class Iowa extends FragmentActivity {
 
 			case 0:
 
-				String title1 = "Appetizers";
+				String title1 = "Directions";
 				return title1;
 
 			case 1:
 
-				String title2 = "Sides and Salads";
+				String title2 = "Summary";
 				return title2;
 				
 			case 2:
 
-				String title3 = "Main Courses";
+				String title3 = "Ingredients";
 				return title3;
 				
-			case 3:
-
-				String title4 = "Desserts";
-				return title4;
-
 			}
 			return null;
 		}
@@ -148,15 +139,9 @@ public class Iowa extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			final View rootView = inflater.inflate(R.layout.activity_appetizers2, container,
+			final View rootView = inflater.inflate(R.layout.directions, container,
 					false);	
-			Button recipe = (Button)rootView.findViewById(R.id.walkingTacos);
-			recipe.setOnClickListener(new View.OnClickListener() {
-				public void onClick(View v) {
-					Intent intent = new Intent(v.getContext(), WalkingTaco.class);
-					startActivity(intent);
-				}
-			});
+			
 			return rootView;
 		}
 		
@@ -194,7 +179,7 @@ public class Iowa extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.appetizers, container,
+			View rootView = inflater.inflate(R.layout.summary, container,
 					false);			
 			return rootView;
 		}
@@ -231,44 +216,7 @@ public class Iowa extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.appetizers, container,
-					false);			
-			return rootView;
-		}
-
-	}
-	
-	public static class PlaceholderFragment4 extends Fragment {
-		/**
-		 * The fragment argument representing the section number for this
-		 * fragment.
-		 */
-		
-		private static final String ARG_SECTION_NUMBER = "section_number";
-
-		/**
-		 * Returns a new instance of this fragment for the given section number.
-		 */
-
-		public static PlaceholderFragment4 newInstance(int sectionNumber) {
-
-			PlaceholderFragment4 fragment = new PlaceholderFragment4();
-			Bundle args = new Bundle();
-
-			args.putInt(ARG_SECTION_NUMBER, sectionNumber);
-
-			fragment.setArguments(args);
-			return fragment;
-
-		}
-
-		public PlaceholderFragment4() {
-		}
-		
-		@Override
-		public View onCreateView(LayoutInflater inflater, ViewGroup container,
-				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.appetizers, container,
+			View rootView = inflater.inflate(R.layout.ingredients, container,
 					false);			
 			return rootView;
 		}

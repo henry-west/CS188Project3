@@ -34,6 +34,14 @@
             android:name=".Iowa"
             android:label="@string/title_activity_iowa" >
         </activity>
+        <activity
+            android:name=".Appetizers2"
+            android:label="@string/title_activity_appetizers2" >
+        </activity>
+        <activity
+            android:name=".WalkingTaco"
+            android:label="@string/title_activity_walking_taco" >
+        </activity>
     </application>
 
 </manifest>
