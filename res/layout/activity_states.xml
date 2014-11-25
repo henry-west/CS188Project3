@@ -5,27 +5,35 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
         android:onClick="toIowa"
-        android:text="Iowa" />
+        android:text="IOWA" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
-        android:text="Wisconsin" />
+        android:text="WISCONSIN" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
-        android:text="Minnesota" />
+        android:text="MINNESOTA" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
+       android:layout_width="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
-        android:text="Illinois" />
+        android:text="ILLINOIS" />
 
 </LinearLayout>

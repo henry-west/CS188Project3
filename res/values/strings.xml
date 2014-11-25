@@ -8,6 +8,7 @@
     <string name="title_activity_states">States</string>
     <string name="title_activity_iowa">Iowa</string>
     <string name="title_activity_appetizers2">Appetizers2</string>
-    <string name="title_activity_walking_taco">WalkingTaco</string>
+    <string name="title_activity_grilled_corn">GrilledCorn</string>
+    <string name="title_activity_holidays">Holidays</string>
 
 </resources>

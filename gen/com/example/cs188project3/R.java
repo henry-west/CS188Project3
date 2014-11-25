@@ -31,65 +31,75 @@ public final class R {
         public static final int pizza=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f090013;
-        public static final int bbc=0x7f090018;
-        public static final int button1=0x7f09000a;
-        public static final int button2=0x7f09000b;
-        public static final int button3=0x7f09000c;
-        public static final int button4=0x7f09000d;
-        public static final int holidays=0x7f090016;
-        public static final int home=0x7f090014;
-        public static final int imageButton2=0x7f090006;
-        public static final int imageButton3=0x7f090008;
-        public static final int imageView1=0x7f090004;
-        public static final int list=0x7f090012;
-        public static final int listAppetizers=0x7f09000f;
-        public static final int listDesserts=0x7f090010;
-        public static final int listMainDishes=0x7f090011;
-        public static final int listView1=0x7f09000e;
+        public static final int action_settings=0x7f090016;
+        public static final int bbc=0x7f09001b;
+        public static final int button1=0x7f09000b;
+        public static final int button2=0x7f09000c;
+        public static final int button3=0x7f09000d;
+        public static final int button4=0x7f09000e;
+        public static final int holidays=0x7f090019;
+        public static final int home=0x7f090017;
+        public static final int imageButton2=0x7f090007;
+        public static final int imageButton3=0x7f090009;
+        public static final int imageView1=0x7f090005;
+        public static final int list=0x7f090015;
+        public static final int listApp=0x7f090010;
+        public static final int listAppetizers=0x7f090014;
+        public static final int listDesserts=0x7f090011;
+        public static final int listMainDishes=0x7f090012;
+        public static final int listSides=0x7f090013;
+        public static final int listView1=0x7f09000f;
         public static final int pager_title_strip=0x7f090002;
-        public static final int potluck=0x7f090017;
-        public static final int states=0x7f090015;
-        public static final int textView1=0x7f090005;
-        public static final int textView2=0x7f090007;
-        public static final int textView3=0x7f090009;
-        public static final int vpPager=0x7f090003;
+        public static final int potluck=0x7f09001a;
+        public static final int states=0x7f090018;
+        public static final int textView1=0x7f090006;
+        public static final int textView2=0x7f090008;
+        public static final int textView3=0x7f09000a;
+        public static final int vpPager=0x7f090004;
         public static final int vpPager2=0x7f090001;
+        public static final int vpPagerHolidays=0x7f090003;
         public static final int walkingTacos=0x7f090000;
     }
     public static final class layout {
         public static final int activity_appetizers2=0x7f030000;
-        public static final int activity_green_beans=0x7f030001;
-        public static final int activity_iowa=0x7f030002;
-        public static final int activity_main=0x7f030003;
-        public static final int activity_midwest_philosophy=0x7f030004;
-        public static final int activity_states=0x7f030005;
-        public static final int appetizers=0x7f030006;
-        public static final int directions=0x7f030007;
-        public static final int ingredients=0x7f030008;
-        public static final int iowa_appetizers=0x7f030009;
-        public static final int iowa_desserts=0x7f03000a;
-        public static final int iowa_main_dishes=0x7f03000b;
-        public static final int iowa_sides=0x7f03000c;
-        public static final int summary=0x7f03000d;
+        public static final int activity_grilled_corn=0x7f030001;
+        public static final int activity_holidays=0x7f030002;
+        public static final int activity_iowa=0x7f030003;
+        public static final int activity_main=0x7f030004;
+        public static final int activity_midwest_philosophy=0x7f030005;
+        public static final int activity_states=0x7f030006;
+        public static final int appetizers=0x7f030007;
+        public static final int directions=0x7f030008;
+        public static final int holidays_appetizers=0x7f030009;
+        public static final int holidays_desserts=0x7f03000a;
+        public static final int holidays_main_dishes=0x7f03000b;
+        public static final int holidays_sides=0x7f03000c;
+        public static final int ingredients=0x7f03000d;
+        public static final int iowa_appetizers=0x7f03000e;
+        public static final int iowa_desserts=0x7f03000f;
+        public static final int iowa_main_dishes=0x7f030010;
+        public static final int iowa_sides=0x7f030011;
+        public static final int summary=0x7f030012;
     }
     public static final class menu {
         public static final int appetizers2=0x7f080000;
-        public static final int iowa=0x7f080001;
-        public static final int main=0x7f080002;
-        public static final int midwest_philosophy=0x7f080003;
-        public static final int states=0x7f080004;
-        public static final int walking_taco=0x7f080005;
+        public static final int holidays=0x7f080001;
+        public static final int iowa=0x7f080002;
+        public static final int main=0x7f080003;
+        public static final int midwest_philosophy=0x7f080004;
+        public static final int states=0x7f080005;
+        public static final int walking_taco=0x7f080006;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
         public static final int app_name=0x7f060000;
         public static final int hello_world=0x7f060001;
         public static final int title_activity_appetizers2=0x7f060006;
+        public static final int title_activity_grilled_corn=0x7f060007;
+        public static final int title_activity_holidays=0x7f060008;
         public static final int title_activity_iowa=0x7f060005;
         public static final int title_activity_midwest_philosophy=0x7f060003;
         public static final int title_activity_states=0x7f060004;
-        public static final int title_activity_walking_taco=0x7f060007;
     }
     public static final class style {
         /** 

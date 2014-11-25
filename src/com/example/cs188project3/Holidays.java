@@ -18,27 +18,27 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class Iowa extends FragmentActivity {
-
+public class Holidays extends FragmentActivity {
+	
 	ViewPager myViewPager;
 	SectionsPagerAdapter mSectionsPagerAdapter;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_iowa);
-
+		setContentView(R.layout.activity_holidays);
+		
 		mSectionsPagerAdapter = new SectionsPagerAdapter(this, myViewPager);
 
 		// Set up the ViewPager with the sections adapter.
-		myViewPager = (ViewPager) findViewById(R.id.vpPager);
+		myViewPager = (ViewPager) findViewById(R.id.vpPagerHolidays);
 		myViewPager.setAdapter(mSectionsPagerAdapter);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.iowa, menu);
+		getMenuInflater().inflate(R.menu.holidays, menu);
 		return true;
 	}
 
@@ -53,9 +53,7 @@ public class Iowa extends FragmentActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
 	
-
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
 		public SectionsPagerAdapter(FragmentActivity fm, ViewPager pager) {
@@ -151,7 +149,7 @@ public class Iowa extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			final View rootView = inflater.inflate(R.layout.iowa_appetizers, container,
+			final View rootView = inflater.inflate(R.layout.holidays_appetizers, container,
 					false);	
 			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listAppetizers);
@@ -194,11 +192,11 @@ public class Iowa extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.iowa_sides, container,
+			View rootView = inflater.inflate(R.layout.holidays_sides, container,
 					false);			
 			
 			String[] sides = {"Side 1", "Side 2", "Side 3"};
-			ListView list1 = (ListView)rootView.findViewById(R.id.list);
+			ListView list1 = (ListView)rootView.findViewById(R.id.listSides);
 			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
 			list1.setAdapter(adapter);
 			return rootView;
@@ -236,9 +234,9 @@ public class Iowa extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.iowa_main_dishes, container,
+			View rootView = inflater.inflate(R.layout.holidays_main_dishes, container,
 					false);			
-			String[] sides = {"Grilled Sweet Corn on the Cob", "Walking Tacos", "Corn Dog Casserole", "Green Bean Casserole Meatballs"};
+			String[] sides = {"Green Bean Casserole", "Au Gratin Potatoes", "Sweet Potato Casserole", "Holiday Lasagna"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
 			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
 			list1.setAdapter(adapter);
@@ -284,7 +282,7 @@ public class Iowa extends FragmentActivity {
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.iowa_desserts, container,
+			View rootView = inflater.inflate(R.layout.holidays_desserts, container,
 					false);	
 			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listDesserts);

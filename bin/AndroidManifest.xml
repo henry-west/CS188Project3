@@ -39,8 +39,12 @@
             android:label="@string/title_activity_appetizers2" >
         </activity>
         <activity
-            android:name=".GreenBeans"
-            android:label="@string/title_activity_walking_taco" >
+            android:name=".GrilledCorn"
+            android:label="@string/title_activity_grilled_corn" >
+        </activity>
+        <activity
+            android:name=".Holidays"
+            android:label="@string/title_activity_holidays" >
         </activity>
     </application>
 
