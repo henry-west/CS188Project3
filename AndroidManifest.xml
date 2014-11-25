@@ -46,6 +46,14 @@
             android:name=".Holidays"
             android:label="@string/title_activity_holidays" >
         </activity>
+        <activity
+            android:name=".Potluck"
+            android:label="@string/title_activity_potluck" >
+        </activity>
+        <activity
+            android:name=".BBC"
+            android:label="@string/title_activity_bbc" >
+        </activity>
     </application>
 
 </manifest>

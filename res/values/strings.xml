@@ -10,5 +10,7 @@
     <string name="title_activity_appetizers2">Appetizers2</string>
     <string name="title_activity_grilled_corn">GrilledCorn</string>
     <string name="title_activity_holidays">Holidays</string>
+    <string name="title_activity_potluck">Potluck</string>
+    <string name="title_activity_bbc">BBC</string>
 
 </resources>

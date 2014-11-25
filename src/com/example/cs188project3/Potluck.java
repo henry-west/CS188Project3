@@ -18,7 +18,7 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-public class Iowa extends FragmentActivity {
+public class Potluck extends FragmentActivity {
 
 	ViewPager myViewPager;
 	SectionsPagerAdapter mSectionsPagerAdapter;
@@ -26,19 +26,19 @@ public class Iowa extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_iowa);
+		setContentView(R.layout.activity_potluck);
 
 		mSectionsPagerAdapter = new SectionsPagerAdapter(this, myViewPager);
 
 		// Set up the ViewPager with the sections adapter.
-		myViewPager = (ViewPager) findViewById(R.id.vpPager);
+		myViewPager = (ViewPager) findViewById(R.id.vpPagerPotluck);
 		myViewPager.setAdapter(mSectionsPagerAdapter);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.iowa, menu);
+		getMenuInflater().inflate(R.menu.potluck, menu);
 		return true;
 	}
 
@@ -53,8 +53,6 @@ public class Iowa extends FragmentActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-
-	
 
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
@@ -105,12 +103,12 @@ public class Iowa extends FragmentActivity {
 
 				String title2 = "Sides and Salads";
 				return title2;
-				
+
 			case 2:
 
 				String title3 = "Main Courses";
 				return title3;
-				
+
 			case 3:
 
 				String title4 = "Desserts";
@@ -126,7 +124,7 @@ public class Iowa extends FragmentActivity {
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
@@ -147,7 +145,7 @@ public class Iowa extends FragmentActivity {
 
 		public PlaceholderFragment1() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
@@ -159,17 +157,17 @@ public class Iowa extends FragmentActivity {
 			list1.setAdapter(adapter);
 			return rootView;
 		}
-		
-		
+
+
 
 	}
-	
+
 	public static class PlaceholderFragment2 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
@@ -190,13 +188,13 @@ public class Iowa extends FragmentActivity {
 
 		public PlaceholderFragment2() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
-			
+
 			String[] sides = {"Side 1", "Side 2", "Side 3"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listSides);
 			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
@@ -205,13 +203,13 @@ public class Iowa extends FragmentActivity {
 		}
 
 	}
-	
+
 	public static class PlaceholderFragment3 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
@@ -232,17 +230,17 @@ public class Iowa extends FragmentActivity {
 
 		public PlaceholderFragment3() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
 					false);			
-			String[] sides = {"Grilled Sweet Corn on the Cob", "Walking Tacos", "Corn Dog Casserole", "Green Bean Casserole Meatballs"};
+			String[] sides = {"Burger and Fries Pot Pie", "Nacho Casserole", "Chicken Pot Pie", "BBQ, Beef, and Biscuit Casserole"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
 			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
 			list1.setAdapter(adapter);
-			
+
 			list1.setOnItemClickListener(new OnItemClickListener() {
 				public void onItemClick(AdapterView<?> parent, View view, int position, long id){
 					Intent intent = new Intent(view.getContext(), GrilledCorn.class);
@@ -253,13 +251,13 @@ public class Iowa extends FragmentActivity {
 		}
 
 	}
-	
+
 	public static class PlaceholderFragment4 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
@@ -280,7 +278,7 @@ public class Iowa extends FragmentActivity {
 
 		public PlaceholderFragment4() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {

@@ -19,21 +19,22 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class Holidays extends FragmentActivity {
-	
-	ViewPager myViewPager;
-	SectionsPagerAdapter mSectionsPagerAdapter;
+
+	ViewPager myViewPager2;
+	SectionsPagerAdapter mSectionsPagerAdapter2;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_holidays);
-		
-		mSectionsPagerAdapter = new SectionsPagerAdapter(this, myViewPager);
+
+		mSectionsPagerAdapter2 = new SectionsPagerAdapter(this, myViewPager2);
 
 		// Set up the ViewPager with the sections adapter.
-		myViewPager = (ViewPager) findViewById(R.id.vpPagerHolidays);
-		myViewPager.setAdapter(mSectionsPagerAdapter);
+		myViewPager2 = (ViewPager) findViewById(R.id.vpPagerHolidays);
+		myViewPager2.setAdapter(mSectionsPagerAdapter2);
 	}
+
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -53,7 +54,7 @@ public class Holidays extends FragmentActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	
+
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
 		public SectionsPagerAdapter(FragmentActivity fm, ViewPager pager) {
@@ -69,17 +70,17 @@ public class Holidays extends FragmentActivity {
 			// below).
 
 			if (position == 0) {
-				return PlaceholderFragment1.newInstance(position + 1);
+				return PlaceholderFragment5.newInstance(position + 1);
 			}
 
 			else if (position == 1) {
-				return PlaceholderFragment2.newInstance(position + 2);
+				return PlaceholderFragment6.newInstance(position + 2);
 			}
 			else if (position == 2) {
-				return PlaceholderFragment3.newInstance(position + 3);
+				return PlaceholderFragment7.newInstance(position + 3);
 			}
 			else {
-				return PlaceholderFragment4.newInstance(position +4);
+				return PlaceholderFragment8.newInstance(position +4);
 			}
 		}
 
@@ -103,12 +104,12 @@ public class Holidays extends FragmentActivity {
 
 				String title2 = "Sides and Salads";
 				return title2;
-				
+
 			case 2:
 
 				String title3 = "Main Courses";
 				return title3;
-				
+
 			case 3:
 
 				String title4 = "Desserts";
@@ -119,21 +120,21 @@ public class Holidays extends FragmentActivity {
 		}
 	}
 
-	public static class PlaceholderFragment1 extends Fragment {
+	public static class PlaceholderFragment5 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
 		 * Returns a new instance of this fragment for the given section number.
 		 */
 
-		public static PlaceholderFragment1 newInstance(int sectionNumber) {
+		public static PlaceholderFragment5 newInstance(int sectionNumber) {
 
-			PlaceholderFragment1 fragment = new PlaceholderFragment1();
+			PlaceholderFragment5 fragment = new PlaceholderFragment5();
 			Bundle args = new Bundle();
 
 			args.putInt(ARG_SECTION_NUMBER, sectionNumber);
@@ -143,13 +144,13 @@ public class Holidays extends FragmentActivity {
 
 		}
 
-		public PlaceholderFragment1() {
+		public PlaceholderFragment5() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			final View rootView = inflater.inflate(R.layout.holidays_appetizers, container,
+			final View rootView = inflater.inflate(R.layout.appetizers, container,
 					false);	
 			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listAppetizers);
@@ -157,26 +158,26 @@ public class Holidays extends FragmentActivity {
 			list1.setAdapter(adapter);
 			return rootView;
 		}
-		
-		
+
+
 
 	}
-	
-	public static class PlaceholderFragment2 extends Fragment {
+
+	public static class PlaceholderFragment6 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
 		 * Returns a new instance of this fragment for the given section number.
 		 */
 
-		public static PlaceholderFragment2 newInstance(int sectionNumber) {
+		public static PlaceholderFragment6 newInstance(int sectionNumber) {
 
-			PlaceholderFragment2 fragment = new PlaceholderFragment2();
+			PlaceholderFragment6 fragment = new PlaceholderFragment6();
 			Bundle args = new Bundle();
 
 			args.putInt(ARG_SECTION_NUMBER, sectionNumber);
@@ -186,15 +187,15 @@ public class Holidays extends FragmentActivity {
 
 		}
 
-		public PlaceholderFragment2() {
+		public PlaceholderFragment6() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.holidays_sides, container,
+			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
-			
+
 			String[] sides = {"Side 1", "Side 2", "Side 3"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listSides);
 			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
@@ -203,22 +204,22 @@ public class Holidays extends FragmentActivity {
 		}
 
 	}
-	
-	public static class PlaceholderFragment3 extends Fragment {
+
+	public static class PlaceholderFragment7 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
 		 * Returns a new instance of this fragment for the given section number.
 		 */
 
-		public static PlaceholderFragment3 newInstance(int sectionNumber) {
+		public static PlaceholderFragment7 newInstance(int sectionNumber) {
 
-			PlaceholderFragment3 fragment = new PlaceholderFragment3();
+			PlaceholderFragment7 fragment = new PlaceholderFragment7();
 			Bundle args = new Bundle();
 
 			args.putInt(ARG_SECTION_NUMBER, sectionNumber);
@@ -228,19 +229,19 @@ public class Holidays extends FragmentActivity {
 
 		}
 
-		public PlaceholderFragment3() {
+		public PlaceholderFragment7() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.holidays_main_dishes, container,
+			View rootView = inflater.inflate(R.layout.main_dishes, container,
 					false);			
 			String[] sides = {"Green Bean Casserole", "Au Gratin Potatoes", "Sweet Potato Casserole", "Holiday Lasagna"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
 			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
 			list1.setAdapter(adapter);
-			
+
 			list1.setOnItemClickListener(new OnItemClickListener() {
 				public void onItemClick(AdapterView<?> parent, View view, int position, long id){
 					Intent intent = new Intent(view.getContext(), GrilledCorn.class);
@@ -251,22 +252,22 @@ public class Holidays extends FragmentActivity {
 		}
 
 	}
-	
-	public static class PlaceholderFragment4 extends Fragment {
+
+	public static class PlaceholderFragment8 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
 		 * Returns a new instance of this fragment for the given section number.
 		 */
 
-		public static PlaceholderFragment4 newInstance(int sectionNumber) {
+		public static PlaceholderFragment8 newInstance(int sectionNumber) {
 
-			PlaceholderFragment4 fragment = new PlaceholderFragment4();
+			PlaceholderFragment8 fragment = new PlaceholderFragment8();
 			Bundle args = new Bundle();
 
 			args.putInt(ARG_SECTION_NUMBER, sectionNumber);
@@ -276,13 +277,13 @@ public class Holidays extends FragmentActivity {
 
 		}
 
-		public PlaceholderFragment4() {
+		public PlaceholderFragment8() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
-			View rootView = inflater.inflate(R.layout.holidays_desserts, container,
+			View rootView = inflater.inflate(R.layout.desserts, container,
 					false);	
 			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3"};
 			ListView list1 = (ListView)rootView.findViewById(R.id.listDesserts);

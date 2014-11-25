@@ -74,7 +74,7 @@ public class GrilledCorn extends FragmentActivity {
 				return PlaceholderFragment2.newInstance(position + 2);
 			}
 			else {
-				return PlaceholderFragment4.newInstance(position +3);
+				return PlaceholderFragment3.newInstance(position +3);
 			}
 		}
 

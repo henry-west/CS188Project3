@@ -9,7 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends Activity {
-
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -40,13 +40,13 @@ public class MainActivity extends Activity {
 			startActivity(new Intent(this, States.class));
 			return true;
 		case R.id.holidays:
-			startActivity(new Intent(this, States.class));
+			startActivity(new Intent(this, Holidays.class));
 			return true;
 		case R.id.potluck:
-			startActivity(new Intent(this, States.class));
+			startActivity(new Intent(this, Potluck.class));
 			return true;
 		case R.id.bbc:
-			startActivity(new Intent(this, States.class));
+			startActivity(new Intent(this, BBC.class));
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
