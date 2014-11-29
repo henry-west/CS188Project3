@@ -15,7 +15,7 @@ import org.w3c.dom.NodeList;
 import com.example.cs188project3.Recipe;
 
 public class XMLProcessor {
-
+	
 	private static List<Recipe> recipeList = new ArrayList<Recipe>();
 	
 	public static List<Recipe> getRecipeList() {
@@ -37,7 +37,7 @@ public class XMLProcessor {
 			DocumentBuilder builder = factory.newDocumentBuilder();
 			//Load and Parse the XML document
 			//document contains the complete XML as a Tree.
-			Document document = builder.parse(new File("recipes.xml"));
+			Document document = builder.parse(new File("res/values/recipes.xml"));
 			//Iterating through the nodes and extracting the data.
 			NodeList nodeList = document.getDocumentElement().getChildNodes();
 
