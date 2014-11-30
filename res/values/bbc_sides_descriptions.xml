@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bbc_sides_descriptions">
+        <item>Midwestern pride comes in many forms. This dish is one.</item>
+        <item>Hey, you\'re still eating salad, so it\'s nutritious!</item>
+        <item>Because meat-and-potatoes cooking is a lifestyle.</item>
+        <item>This dish is served in fancy-pants dishes in the photo, but
+            we\'d be just fine with a red solo cup of it.</item>
+    </string-array>
+    
+</resources>

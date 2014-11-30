@@ -9,7 +9,12 @@ package com.example.cs188project3;
 
 public final class R {
     public static final class array {
-        public static final int recipes=0x7f050000;
+        public static final int bbc_appetizer_descriptions=0x7f040000;
+        public static final int bbc_dessert_descriptions=0x7f040001;
+        public static final int bbc_main_dish_descriptions=0x7f040002;
+        public static final int bbc_sides_descriptions=0x7f040003;
+        public static final int iowa_main_dish_descriptions=0x7f040004;
+        public static final int recipes=0x7f040005;
     }
     public static final class attr {
     }
@@ -21,14 +26,34 @@ public final class R {
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
          */
-        public static final int activity_horizontal_margin=0x7f040000;
-        public static final int activity_vertical_margin=0x7f040001;
+        public static final int activity_horizontal_margin=0x7f050000;
+        public static final int activity_vertical_margin=0x7f050001;
     }
     public static final class drawable {
-        public static final int corn=0x7f020000;
-        public static final int favorites=0x7f020001;
-        public static final int ic_launcher=0x7f020002;
-        public static final int pizza=0x7f020003;
+        public static final int bacon_caramel_apple=0x7f020000;
+        public static final int bacon_cheese_dip=0x7f020001;
+        public static final int bacon_cheese_quiche=0x7f020002;
+        public static final int bacon_choc_cookies=0x7f020003;
+        public static final int bacon_dressing=0x7f020004;
+        public static final int bacon_potato_salad=0x7f020005;
+        public static final int beer_bacon_caramel_corn=0x7f020006;
+        public static final int beer_bacon_cheddar_bread=0x7f020007;
+        public static final int beer_candied_bacon=0x7f020008;
+        public static final int beer_caramelized_onion_dip=0x7f020009;
+        public static final int beer_mac_cheese=0x7f02000a;
+        public static final int cheese_bacon_soup=0x7f02000b;
+        public static final int cheesy_bacon_ranch_potatoes=0x7f02000c;
+        public static final int choc_covered_bacon=0x7f02000d;
+        public static final int corn=0x7f02000e;
+        public static final int corn_dog_casserole=0x7f02000f;
+        public static final int creamy_corn_bacon=0x7f020010;
+        public static final int favorites=0x7f020011;
+        public static final int green_bean_casserole_meatballs=0x7f020012;
+        public static final int ic_launcher=0x7f020013;
+        public static final int maple_bacon_donuts=0x7f020014;
+        public static final int pizza=0x7f020015;
+        public static final int sweet_corn_on_cob=0x7f020016;
+        public static final int walking_tacos=0x7f020017;
     }
     public static final class id {
         public static final int action_settings=0x7f090017;

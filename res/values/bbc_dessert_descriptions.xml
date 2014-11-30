@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bbc_dessert_descriptions">
+        <item>The hole in every donut was secretly designed to hold
+            a stick of bacon.</item>
+        <item>Another lesson in teamwork, courtesy of our friends bacon 
+            and chocolate.</item>
+        <item>It\'s sticky. It\'s sugary. It\'s bacon-y. It\'s on a stick.</item>
+        <item>Thanks for boosting the chocolate chip cookie\'s ego, bacon.</item>
+    </string-array>
+    
+</resources>

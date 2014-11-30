@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bbc_appetizer_descriptions">
+        <item>We\'re still not sure why bacon isn\'t in the candy aisle.</item>
+        <item>Perfecting movie night one sugary, bacon-y, beer-infused kernel at a time.</item>
+        <item>Carbs, sugar and vegetables are all part of a balanced diet, and
+            we\'ve got you covered.</item>
+        <item>Our advice: Save your spoon, and just use sticks
+            of bacon to eat this dip.</item>
+    </string-array>
+    
+</resources>

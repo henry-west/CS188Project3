@@ -151,9 +151,12 @@ public class BBC extends FragmentActivity {
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.appetizers, container,
 					false);	
-			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3"};
+			String[] sides = {"BEER-CANDIED BACON", "BEER BACON CARAMEL CORN", "BEER CARAMELIZED ONION DIP", "BACON CHEESE DIP"};
+			String[] descriptions = getResources().getStringArray(R.array.bbc_appetizer_descriptions);
+			Integer[] pictures = {R.drawable.beer_candied_bacon, R.drawable.beer_bacon_caramel_corn, R.drawable.beer_caramelized_onion_dip, R.drawable.bacon_cheese_dip};
+			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listAppetizers);
-			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
+			
 			list1.setAdapter(adapter);
 			return rootView;
 		}
@@ -195,9 +198,12 @@ public class BBC extends FragmentActivity {
 			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
 
-			String[] sides = {"Side 1", "Side 2", "Side 3"};
+			String[] sides = {"CREAMY CORN WITH BACON", "SALAD WITH WARM BACON DRESSING", "CHEESY BACON RANCH POTATOES", "BACON POTATO SALAD"};
+			String[] descriptions = getResources().getStringArray(R.array.bbc_sides_descriptions);
+			Integer[] pictures = {R.drawable.creamy_corn_bacon, R.drawable.bacon_dressing, R.drawable.cheesy_bacon_ranch_potatoes, R.drawable.bacon_potato_salad};
+			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listSides);
-			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
+			
 			list1.setAdapter(adapter);
 			return rootView;
 		}
@@ -236,9 +242,12 @@ public class BBC extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
 					false);			
-			String[] sides = {"Bacon and Baked Potato Soup", "Beer Macaroni and Cheese", "Bacon and Cheese Quiche", "Beer, Bacon, and Cheddar Bread"};
+			String[] sides = {"BACON AND BAKED POTATO SOUP", "BEER MACARONI AND CHEESE", "BACON AND CHEESE QUICHE", "BEER, BACON AND CHEDDAR BREAD"};
+			String[] descriptions = getResources().getStringArray(R.array.bbc_main_dish_descriptions);
+			Integer[] pictures = {R.drawable.cheese_bacon_soup, R.drawable.beer_mac_cheese, R.drawable.bacon_cheese_quiche, R.drawable.beer_bacon_cheddar_bread};
+			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
-			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
+			
 			list1.setAdapter(adapter);
 
 			list1.setOnItemClickListener(new OnItemClickListener() {
@@ -284,9 +293,12 @@ public class BBC extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.desserts, container,
 					false);	
-			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3"};
+			String[] sides = {"MAPLE BACON DONUTS", "CHOCOLATE-COVERED BACON", "BACON CARAMEL APPLE", "BACON CHOCOLATE CHIP COOKIES"};
+			String[] descriptions = getResources().getStringArray(R.array.bbc_dessert_descriptions);
+			Integer[] pictures = {R.drawable.maple_bacon_donuts, R.drawable.choc_covered_bacon, R.drawable.bacon_caramel_apple, R.drawable.bacon_choc_cookies};
+			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listDesserts);
-			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
+			
 			list1.setAdapter(adapter);
 			return rootView;
 		}

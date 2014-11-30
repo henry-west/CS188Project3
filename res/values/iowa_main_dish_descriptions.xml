@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="iowa_main_dish_descriptions">
+        <item>No, you\'re not allowed to use margarine in this recipe.
+            In fact, it\'s illegal in the state of Iowa. You\'re welcome.</item>
+        <item>Add "walking" tacos to your daily exercise regimen!</item>
+        <item>If you can\'t bake it into a casserole, it was never worth
+            eating in the first place. Keep the Iowa State Fair close to
+            your heart with this dish.</item>
+        <item>Green bean casserole and meatballs: the heartwarming love story
+            of two unlikely Midwestern favorites.</item>
+    </string-array>
+    
+</resources>

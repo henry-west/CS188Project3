@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="bbc_main_dish_descriptions">
+        <item>It\'s perfect for a chilly day. Or a hot day. Or any day.
+            Because bacon.</item>
+        <item>What\'s more comforting than eating a year\'s worth of calories
+            in a single sitting? With a beer on the side, of course.</item>
+        <item>Don\'t even try to break up bacon and cheese. Just don\'t.</item>
+        <item>Four food groups that changed the world in a single loaf of
+            bread. A lesson in teamwork. Tell that one to your grandchildren.</item>
+    </string-array>
+    
+</resources>

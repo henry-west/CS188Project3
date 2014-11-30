@@ -244,9 +244,9 @@ public class Iowa extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
 					false);			
-			String[] sides = {"Grilled Sweet Corn on the Cob", "Walking Tacos", "Corn Dog Casserole", "Green Bean Casserole Meatballs"};
-			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
-			Integer[] pictures = {R.drawable.pizza, R.drawable.corn, R.drawable.favorites, R.drawable.corn};
+			String[] sides = {"GRILLED SWEET CORN ON THE COB", "WALKING TACO", "CORN DOG CASSEROLE", "GREEN BEAN CASSEROLE AND MEATBALLS"};
+			String[] descriptions = getResources().getStringArray(R.array.iowa_main_dish_descriptions);
+			Integer[] pictures = {R.drawable.sweet_corn_on_cob, R.drawable.walking_tacos, R.drawable.corn_dog_casserole, R.drawable.green_bean_casserole_meatballs};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
 			
