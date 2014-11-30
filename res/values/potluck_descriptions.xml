@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="potluck_descriptions">
+        <item>The melodious mashup of the culinary world</item>
+        <item>Making nachos socially acceptable beyond game day. You don\'t have to thank us,
+            so long as we get a bite of this casserole.</item>
+        <item>There are vegetables in it, so it\'s healthy!</item>
+        <item>God bless the letter B. That\'s all we have to say about this potluck masterpiece.</item>
+    </string-array>
+    
+</resources>

@@ -14,7 +14,8 @@ public final class R {
         public static final int bbc_main_dish_descriptions=0x7f040002;
         public static final int bbc_sides_descriptions=0x7f040003;
         public static final int iowa_main_dish_descriptions=0x7f040004;
-        public static final int recipes=0x7f040005;
+        public static final int potluck_descriptions=0x7f040005;
+        public static final int recipes=0x7f040006;
     }
     public static final class attr {
     }
@@ -41,19 +42,22 @@ public final class R {
         public static final int beer_candied_bacon=0x7f020008;
         public static final int beer_caramelized_onion_dip=0x7f020009;
         public static final int beer_mac_cheese=0x7f02000a;
-        public static final int cheese_bacon_soup=0x7f02000b;
-        public static final int cheesy_bacon_ranch_potatoes=0x7f02000c;
-        public static final int choc_covered_bacon=0x7f02000d;
-        public static final int corn=0x7f02000e;
-        public static final int corn_dog_casserole=0x7f02000f;
-        public static final int creamy_corn_bacon=0x7f020010;
-        public static final int favorites=0x7f020011;
-        public static final int green_bean_casserole_meatballs=0x7f020012;
-        public static final int ic_launcher=0x7f020013;
-        public static final int maple_bacon_donuts=0x7f020014;
-        public static final int pizza=0x7f020015;
-        public static final int sweet_corn_on_cob=0x7f020016;
-        public static final int walking_tacos=0x7f020017;
+        public static final int burger_fries_pot_pie=0x7f02000b;
+        public static final int cheese_bacon_soup=0x7f02000c;
+        public static final int cheesy_bacon_ranch_potatoes=0x7f02000d;
+        public static final int chicken_pot_pie=0x7f02000e;
+        public static final int choc_covered_bacon=0x7f02000f;
+        public static final int corn=0x7f020010;
+        public static final int corn_dog_casserole=0x7f020011;
+        public static final int creamy_corn_bacon=0x7f020012;
+        public static final int favorites=0x7f020013;
+        public static final int green_bean_casserole_meatballs=0x7f020014;
+        public static final int ic_launcher=0x7f020015;
+        public static final int maple_bacon_donuts=0x7f020016;
+        public static final int nacho_casserole=0x7f020017;
+        public static final int pizza=0x7f020018;
+        public static final int sweet_corn_on_cob=0x7f020019;
+        public static final int walking_tacos=0x7f02001a;
     }
     public static final class id {
         public static final int action_settings=0x7f090017;
