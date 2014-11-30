@@ -152,9 +152,12 @@ public class Holidays extends FragmentActivity {
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.appetizers, container,
 					false);	
-			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3"};
+			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3", "Appetizer 4"};
+			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
+			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};
+			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listAppetizers);
-			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
+			
 			list1.setAdapter(adapter);
 			return rootView;
 		}
@@ -196,9 +199,12 @@ public class Holidays extends FragmentActivity {
 			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
 
-			String[] sides = {"Side 1", "Side 2", "Side 3"};
+			String[] sides = {"Side 1", "Side 2", "Side 3", "Side 4"};
+			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
+			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};
+			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listSides);
-			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
+			
 			list1.setAdapter(adapter);
 			return rootView;
 		}
@@ -238,8 +244,11 @@ public class Holidays extends FragmentActivity {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
 					false);			
 			String[] sides = {"Green Bean Casserole", "Au Gratin Potatoes", "Sweet Potato Casserole", "Holiday Lasagna"};
+			String[] descriptions = getResources().getStringArray(R.array.holidays_descriptions);
+			Integer[] pictures = {R.drawable.green_bean_casserole, R.drawable.au_gratin_potatoes, R.drawable.sweet_potato_casserole, R.drawable.holiday_lasagna};
+			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
-			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
+			
 			list1.setAdapter(adapter);
 
 			list1.setOnItemClickListener(new OnItemClickListener() {
@@ -285,9 +294,12 @@ public class Holidays extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.desserts, container,
 					false);	
-			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3"};
+			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3", "Dessert 4"};
+			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
+			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};
+			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listDesserts);
-			ArrayAdapter adapter = new ArrayAdapter(rootView.getContext(), android.R.layout.simple_list_item_1, sides);
+			
 			list1.setAdapter(adapter);
 			return rootView;
 		}
