@@ -30,12 +30,25 @@ public class States extends Activity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+				// Handle action bar item
+				switch(item.getItemId()) {
+				case  R.id.home:
+					startActivity(new Intent(this, MainActivity.class));
+					return true;
+				case R.id.states:
+					
+					return true;
+				case R.id.holidays:
+					startActivity(new Intent(this, Holidays.class));
+					return true;
+				case R.id.potluck:
+					startActivity(new Intent(this, Potluck.class));
+					return true;
+				case R.id.bbc:
+					startActivity(new Intent(this, BBC.class));
+					return true;
+				default:
+					return super.onOptionsItemSelected(item);
+				}
 	}
 }
