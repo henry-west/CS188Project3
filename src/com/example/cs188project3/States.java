@@ -13,6 +13,23 @@ public class States extends Activity {
 		Intent intent = new Intent(this, Iowa.class);
 		startActivity(intent);
 	}
+	
+	public void toIllinois(View view) {
+		Intent intent = new Intent(this, Illinois.class);
+		startActivity(intent);
+	}
+	
+	public void toMinnesota(View view) {
+		Intent intent = new Intent(this, Minnesota.class);
+		startActivity(intent);
+	}
+	
+	public void toWisconsin(View view) {
+		Intent intent = new Intent(this, Wisconsin.class);
+		startActivity(intent);
+	}
+	
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

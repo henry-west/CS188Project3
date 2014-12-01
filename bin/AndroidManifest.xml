@@ -54,6 +54,18 @@
             android:name=".BBC"
             android:label="@string/title_activity_bbc" >
         </activity>
+        <activity
+            android:name=".Illinois"
+            android:label="@string/title_activity_illinois" >
+        </activity>
+        <activity
+            android:name=".Minnesota"
+            android:label="@string/title_activity_minnesota" >
+        </activity>
+        <activity
+            android:name=".Wisconsin"
+            android:label="@string/title_activity_wisconsin" >
+        </activity>
     </application>
 
 </manifest>

@@ -14,9 +14,12 @@ public final class R {
         public static final int bbc_main_dish_descriptions=0x7f040002;
         public static final int bbc_sides_descriptions=0x7f040003;
         public static final int holidays_descriptions=0x7f040004;
-        public static final int iowa_main_dish_descriptions=0x7f040005;
-        public static final int potluck_descriptions=0x7f040006;
-        public static final int recipes=0x7f040007;
+        public static final int illinois_descriptions=0x7f040005;
+        public static final int iowa_main_dish_descriptions=0x7f040006;
+        public static final int minnesota_descriptions=0x7f040007;
+        public static final int potluck_descriptions=0x7f040008;
+        public static final int recipes=0x7f040009;
+        public static final int wisconsin_descriptions=0x7f04000a;
     }
     public static final class attr {
     }
@@ -41,28 +44,41 @@ public final class R {
         public static final int bacon_potato_salad=0x7f020006;
         public static final int beer_bacon_caramel_corn=0x7f020007;
         public static final int beer_bacon_cheddar_bread=0x7f020008;
-        public static final int beer_candied_bacon=0x7f020009;
-        public static final int beer_caramelized_onion_dip=0x7f02000a;
-        public static final int beer_mac_cheese=0x7f02000b;
-        public static final int burger_fries_pot_pie=0x7f02000c;
-        public static final int cheese_bacon_soup=0x7f02000d;
-        public static final int cheesy_bacon_ranch_potatoes=0x7f02000e;
-        public static final int chicken_pot_pie=0x7f02000f;
-        public static final int choc_covered_bacon=0x7f020010;
-        public static final int corn=0x7f020011;
-        public static final int corn_dog_casserole=0x7f020012;
-        public static final int creamy_corn_bacon=0x7f020013;
-        public static final int favorites=0x7f020014;
-        public static final int green_bean_casserole=0x7f020015;
-        public static final int green_bean_casserole_meatballs=0x7f020016;
-        public static final int holiday_lasagna=0x7f020017;
-        public static final int ic_launcher=0x7f020018;
-        public static final int maple_bacon_donuts=0x7f020019;
-        public static final int nacho_casserole=0x7f02001a;
-        public static final int pizza=0x7f02001b;
-        public static final int sweet_corn_on_cob=0x7f02001c;
-        public static final int sweet_potato_casserole=0x7f02001d;
-        public static final int walking_tacos=0x7f02001e;
+        public static final int beer_battered_cheese_curds=0x7f020009;
+        public static final int beer_battered_grilled_cheese=0x7f02000a;
+        public static final int beer_candied_bacon=0x7f02000b;
+        public static final int beer_caramelized_onion_dip=0x7f02000c;
+        public static final int beer_mac_cheese=0x7f02000d;
+        public static final int bohemian_pork_roast=0x7f02000e;
+        public static final int burger_fries_pot_pie=0x7f02000f;
+        public static final int cheese_bacon_soup=0x7f020010;
+        public static final int cheesy_bacon_ranch_potatoes=0x7f020011;
+        public static final int chicago_hot_dog=0x7f020012;
+        public static final int chicken_pot_pie=0x7f020013;
+        public static final int choc_covered_bacon=0x7f020014;
+        public static final int corn=0x7f020015;
+        public static final int corn_dog_casserole=0x7f020016;
+        public static final int creamy_corn_bacon=0x7f020017;
+        public static final int deep_dish_pizza_dough=0x7f020018;
+        public static final int favorites=0x7f020019;
+        public static final int green_bay_chili=0x7f02001a;
+        public static final int green_bean_casserole=0x7f02001b;
+        public static final int green_bean_casserole_meatballs=0x7f02001c;
+        public static final int holiday_lasagna=0x7f02001d;
+        public static final int ic_launcher=0x7f02001e;
+        public static final int juicy_lucy=0x7f02001f;
+        public static final int lutefisk=0x7f020020;
+        public static final int maple_bacon_donuts=0x7f020021;
+        public static final int milwaukee_brats=0x7f020022;
+        public static final int minnesota_wild_rice_soup=0x7f020023;
+        public static final int nacho_casserole=0x7f020024;
+        public static final int pizza=0x7f020025;
+        public static final int pizza_spaghetti_casserole=0x7f020026;
+        public static final int sausage_patty_pizza=0x7f020027;
+        public static final int sweet_corn_on_cob=0x7f020028;
+        public static final int sweet_potato_casserole=0x7f020029;
+        public static final int tater_tot_hotdish=0x7f02002a;
+        public static final int walking_tacos=0x7f02002b;
     }
     public static final class id {
         public static final int action_settings=0x7f090017;
@@ -100,43 +116,53 @@ public final class R {
         public static final int activity_green_beans=0x7f030001;
         public static final int activity_grilled_corn=0x7f030002;
         public static final int activity_holidays=0x7f030003;
-        public static final int activity_iowa=0x7f030004;
-        public static final int activity_main=0x7f030005;
-        public static final int activity_midwest_philosophy=0x7f030006;
-        public static final int activity_potluck=0x7f030007;
-        public static final int activity_states=0x7f030008;
-        public static final int appetizers=0x7f030009;
-        public static final int desserts=0x7f03000a;
-        public static final int directions=0x7f03000b;
-        public static final int ingredients=0x7f03000c;
-        public static final int list_item=0x7f03000d;
-        public static final int main_dishes=0x7f03000e;
-        public static final int sides=0x7f03000f;
-        public static final int summary=0x7f030010;
+        public static final int activity_illinois=0x7f030004;
+        public static final int activity_iowa=0x7f030005;
+        public static final int activity_main=0x7f030006;
+        public static final int activity_midwest_philosophy=0x7f030007;
+        public static final int activity_minnesota=0x7f030008;
+        public static final int activity_potluck=0x7f030009;
+        public static final int activity_states=0x7f03000a;
+        public static final int activity_wisconsin=0x7f03000b;
+        public static final int appetizers=0x7f03000c;
+        public static final int desserts=0x7f03000d;
+        public static final int directions=0x7f03000e;
+        public static final int ingredients=0x7f03000f;
+        public static final int list_item=0x7f030010;
+        public static final int main_dishes=0x7f030011;
+        public static final int sides=0x7f030012;
+        public static final int summary=0x7f030013;
     }
     public static final class menu {
         public static final int appetizers2=0x7f080000;
         public static final int bbc=0x7f080001;
         public static final int holidays=0x7f080002;
-        public static final int iowa=0x7f080003;
-        public static final int main=0x7f080004;
-        public static final int midwest_philosophy=0x7f080005;
-        public static final int potluck=0x7f080006;
-        public static final int states=0x7f080007;
-        public static final int walking_taco=0x7f080008;
+        public static final int illinois=0x7f080003;
+        public static final int iowa=0x7f080004;
+        public static final int main=0x7f080005;
+        public static final int midwest_philosophy=0x7f080006;
+        public static final int minnesota=0x7f080007;
+        public static final int potluck=0x7f080008;
+        public static final int states=0x7f080009;
+        public static final int walking_taco=0x7f08000a;
+        public static final int wisconsin=0x7f08000b;
     }
     public static final class string {
         public static final int action_settings=0x7f060002;
         public static final int app_name=0x7f060000;
         public static final int hello_world=0x7f060001;
+        public static final int midwest_philosophy=0x7f06000b;
         public static final int title_activity_appetizers2=0x7f060006;
         public static final int title_activity_bbc=0x7f06000a;
         public static final int title_activity_grilled_corn=0x7f060007;
         public static final int title_activity_holidays=0x7f060008;
+        public static final int title_activity_illinois=0x7f06000c;
         public static final int title_activity_iowa=0x7f060005;
         public static final int title_activity_midwest_philosophy=0x7f060003;
+        public static final int title_activity_minnesota=0x7f06000d;
         public static final int title_activity_potluck=0x7f060009;
         public static final int title_activity_states=0x7f060004;
+        public static final int title_activity_wisconsin=0x7f06000e;
     }
     public static final class style {
         /** 

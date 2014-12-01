@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="minnesota_descriptions">
+        <item>The casserole that’s too hipster to call itself “casserole.” </item>
+        <item>Minnesotan inception — a cheese-filled beef patty between two buttered buns with more cheese, of course.</item>
+        <item>Minnesota: where we’re tough enough to eat something soaked in lye for multiple days. They don’t call them Midwestern values for nothing.</item>
+        <item>This stuff is organic, but don’t worry, we drown it in cheese to give it that special Midwestern touch. </item>
+    </string-array>
+    
+</resources>

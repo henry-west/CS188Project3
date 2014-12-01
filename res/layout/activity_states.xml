@@ -18,7 +18,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
-        android:text="WISCONSIN" />
+        android:text="WISCONSIN"
+        android:onClick="toWisconsin" />
 
     <Button
         android:id="@+id/button3"
@@ -26,7 +27,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
-        android:text="MINNESOTA" />
+        android:text="MINNESOTA"
+        android:onClick="toMinnesota" />
 
     <Button
         android:id="@+id/button4"
@@ -34,6 +36,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
+        android:onClick="toIllinois"
         android:text="ILLINOIS" />
 
 </LinearLayout>

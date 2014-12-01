@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="wisconsin_descriptions">
+        <item>Deep-fried. Cheese. Beer. Yeah, we’re still having trouble processing the majesty of it all. </item>
+        <item>“Stadium sauce” is the diplomatic way of saying, “We can’t guarantee all the alcohol is cooked out of this dish.”</item>
+        <item>The only food groups that matter, in sandwich form: beer, bread and cheese.</item>
+        <item>The Midwest: where cities might as well be named after their signature dishes.</item>
+    </string-array>
+    
+</resources>

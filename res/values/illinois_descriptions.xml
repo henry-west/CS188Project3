@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="illinois_descriptions">
+        <item>Even the pizza dough is named after Chicago! </item>
+        <item>Because “Shallow-Dish” pizza just doesn’t have the same ring to it, and Chicago-style is code for more carbs.</item>
+        <item> “What’s really in a hot dog?” Enter the Chicago-style hotdog, a delicacy piled so high with artery-clogging goodness that you’ll be too distracted to contemplate life’s big questions.</item>
+        <item>Midwestern logic: “They’re delicious on their own, so let’s throw them in one pan, bake it and make magic!”</item>
+        <item>This is technically an Eastern European dish, but Illinois is the “Chicago-style” state. </item>
+    </string-array>
+    
+</resources>
