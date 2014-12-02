@@ -3,32 +3,35 @@
     tools:context="com.example.cs188project3.MainActivity" >
 
     <item
-    android:id="@+id/home"
-    android:showAsAction="never"
-    android:title="Home"/>
-
-    <item
-    android:id="@+id/states"
-    android:orderInCategory="2"
-    android:showAsAction="never"
-    android:title="State Favorites"/>
+        android:id="@+id/search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@drawable/search"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:title="Search"/>
     
     <item
-    android:id="@+id/holidays"
-    android:orderInCategory="3"
-    android:showAsAction="never"
-    android:title="Holiday Favorites"/>
-    
+        android:id="@+id/home"
+        android:showAsAction="never"
+        android:title="Home"/>
     <item
-    android:id="@+id/potluck"
-    android:orderInCategory="4"
-    android:showAsAction="never"
-    android:title="Potluck"/>
-    
+        android:id="@+id/states"
+        android:orderInCategory="2"
+        android:showAsAction="never"
+        android:title="State Favorites"/>
     <item
-    android:id="@+id/bbc"
-    android:orderInCategory="5"
-    android:showAsAction="never"
-    android:title="Bacon, Beer, and Cheese"/>
+        android:id="@+id/holidays"
+        android:orderInCategory="3"
+        android:showAsAction="never"
+        android:title="Holiday Favorites"/>
+    <item
+        android:id="@+id/potluck"
+        android:orderInCategory="4"
+        android:showAsAction="never"
+        android:title="Potluck"/>
+    <item
+        android:id="@+id/bbc"
+        android:orderInCategory="5"
+        android:showAsAction="never"
+        android:title="Bacon, Beer, and Cheese"/>
 
 </menu>

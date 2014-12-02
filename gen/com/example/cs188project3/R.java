@@ -75,10 +75,11 @@ public final class R {
         public static final int pizza=0x7f020025;
         public static final int pizza_spaghetti_casserole=0x7f020026;
         public static final int sausage_patty_pizza=0x7f020027;
-        public static final int sweet_corn_on_cob=0x7f020028;
-        public static final int sweet_potato_casserole=0x7f020029;
-        public static final int tater_tot_hotdish=0x7f02002a;
-        public static final int walking_tacos=0x7f02002b;
+        public static final int search=0x7f020028;
+        public static final int sweet_corn_on_cob=0x7f020029;
+        public static final int sweet_potato_casserole=0x7f02002a;
+        public static final int tater_tot_hotdish=0x7f02002b;
+        public static final int walking_tacos=0x7f02002c;
     }
     public static final class id {
         public static final int action_settings=0x7f090017;
@@ -101,6 +102,7 @@ public final class R {
         public static final int pager_title_strip=0x7f090001;
         public static final int picture=0x7f090012;
         public static final int potluck=0x7f09001b;
+        public static final int search=0x7f09001d;
         public static final int states=0x7f090019;
         public static final int textView1=0x7f090006;
         public static final int textView2=0x7f090008;
