@@ -98,22 +98,22 @@ public class Iowa extends FragmentActivity {
 
 			case 0:
 
-				String title1 = "Appetizers";
+				String title1 = "APPETIZERS";
 				return title1;
 
 			case 1:
 
-				String title2 = "Sides and Salads";
+				String title2 = "SIDES AND SALADS";
 				return title2;
 				
 			case 2:
 
-				String title3 = "Main Courses";
+				String title3 = "MAINS";
 				return title3;
 				
 			case 3:
 
-				String title4 = "Desserts";
+				String title4 = "DESSERTS";
 				return title4;
 
 			}

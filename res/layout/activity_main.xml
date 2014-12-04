@@ -7,7 +7,7 @@
         android:id="@+id/imageView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/pizza" />
+        android:src="@drawable/beer_caramelized_onion_dip" />
 
     <TextView
         android:id="@+id/textView1"
@@ -30,8 +30,8 @@
             <ImageButton
                 android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/corn" 
+                android:layout_height="match_parent"
+                android:src="@drawable/scotcheroos" 
                 android:onClick="toMidWestPhilosophy"/>
 
             <TextView
@@ -51,8 +51,8 @@
             <ImageButton
                 android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/favorites" />
+                android:layout_height="match_parent"
+                android:src="@drawable/walking_tacos" />
 
             <TextView
                 android:id="@+id/textView3"

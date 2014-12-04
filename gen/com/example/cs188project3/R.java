@@ -75,11 +75,12 @@ public final class R {
         public static final int pizza=0x7f020025;
         public static final int pizza_spaghetti_casserole=0x7f020026;
         public static final int sausage_patty_pizza=0x7f020027;
-        public static final int search=0x7f020028;
-        public static final int sweet_corn_on_cob=0x7f020029;
-        public static final int sweet_potato_casserole=0x7f02002a;
-        public static final int tater_tot_hotdish=0x7f02002b;
-        public static final int walking_tacos=0x7f02002c;
+        public static final int scotcheroos=0x7f020028;
+        public static final int search=0x7f020029;
+        public static final int sweet_corn_on_cob=0x7f02002a;
+        public static final int sweet_potato_casserole=0x7f02002b;
+        public static final int tater_tot_hotdish=0x7f02002c;
+        public static final int walking_tacos=0x7f02002d;
     }
     public static final class id {
         public static final int action_settings=0x7f090017;

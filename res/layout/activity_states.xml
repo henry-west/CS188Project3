@@ -9,6 +9,8 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:background="@android:color/transparent"
         android:onClick="toIowa"
         android:text="IOWA" />
 
@@ -18,6 +20,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
+        android:textColor="#FF0000"
         android:text="WISCONSIN"
         android:onClick="toWisconsin" />
 
@@ -27,6 +30,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
+        android:textColor="#FF0000"
         android:text="MINNESOTA"
         android:onClick="toMinnesota" />
 
@@ -36,6 +40,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_height="wrap_content"
+        android:textColor="#FF0000"
         android:onClick="toIllinois"
         android:text="ILLINOIS" />
 
