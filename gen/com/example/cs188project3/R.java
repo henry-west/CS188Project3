@@ -128,25 +128,26 @@ public final class R {
         public static final int activity_midwest_philosophy=0x7f030008;
         public static final int activity_minnesota=0x7f030009;
         public static final int activity_potluck=0x7f03000a;
-        public static final int activity_states=0x7f03000b;
-        public static final int activity_walking_taco=0x7f03000c;
-        public static final int activity_wisconsin=0x7f03000d;
-        public static final int appetizers=0x7f03000e;
-        public static final int desserts=0x7f03000f;
-        public static final int directions=0x7f030010;
-        public static final int holidays_appetizers=0x7f030011;
-        public static final int holidays_desserts=0x7f030012;
-        public static final int holidays_main_dishes=0x7f030013;
-        public static final int holidays_sides=0x7f030014;
-        public static final int ingredients=0x7f030015;
-        public static final int iowa_appetizers=0x7f030016;
-        public static final int iowa_desserts=0x7f030017;
-        public static final int iowa_main_dishes=0x7f030018;
-        public static final int iowa_sides=0x7f030019;
-        public static final int list_item=0x7f03001a;
-        public static final int main_dishes=0x7f03001b;
-        public static final int sides=0x7f03001c;
-        public static final int summary=0x7f03001d;
+        public static final int activity_recipe_page=0x7f03000b;
+        public static final int activity_states=0x7f03000c;
+        public static final int activity_walking_taco=0x7f03000d;
+        public static final int activity_wisconsin=0x7f03000e;
+        public static final int appetizers=0x7f03000f;
+        public static final int desserts=0x7f030010;
+        public static final int directions=0x7f030011;
+        public static final int holidays_appetizers=0x7f030012;
+        public static final int holidays_desserts=0x7f030013;
+        public static final int holidays_main_dishes=0x7f030014;
+        public static final int holidays_sides=0x7f030015;
+        public static final int ingredients=0x7f030016;
+        public static final int iowa_appetizers=0x7f030017;
+        public static final int iowa_desserts=0x7f030018;
+        public static final int iowa_main_dishes=0x7f030019;
+        public static final int iowa_sides=0x7f03001a;
+        public static final int list_item=0x7f03001b;
+        public static final int main_dishes=0x7f03001c;
+        public static final int sides=0x7f03001d;
+        public static final int summary=0x7f03001e;
     }
     public static final class menu {
         public static final int appetizers2=0x7f090000;
@@ -158,9 +159,10 @@ public final class R {
         public static final int midwest_philosophy=0x7f090006;
         public static final int minnesota=0x7f090007;
         public static final int potluck=0x7f090008;
-        public static final int states=0x7f090009;
-        public static final int walking_taco=0x7f09000a;
-        public static final int wisconsin=0x7f09000b;
+        public static final int recipe_page=0x7f090009;
+        public static final int states=0x7f09000a;
+        public static final int walking_taco=0x7f09000b;
+        public static final int wisconsin=0x7f09000c;
     }
     public static final class string {
         public static final int action_settings=0x7f070002;
@@ -176,6 +178,7 @@ public final class R {
         public static final int title_activity_midwest_philosophy=0x7f070003;
         public static final int title_activity_minnesota=0x7f07000d;
         public static final int title_activity_potluck=0x7f070009;
+        public static final int title_activity_recipe_page=0x7f07000f;
         public static final int title_activity_states=0x7f070004;
         public static final int title_activity_wisconsin=0x7f07000e;
     }

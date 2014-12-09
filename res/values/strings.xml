@@ -22,5 +22,6 @@ Forget those practically microscopic dishes plated on square, immaculate dinnerw
     <string name="title_activity_illinois">Illinois</string>
     <string name="title_activity_minnesota">Minnesota</string>
     <string name="title_activity_wisconsin">Wisconsin</string>
+    <string name="title_activity_recipe_page">RecipePage</string>
 
 </resources>

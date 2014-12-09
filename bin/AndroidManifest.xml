@@ -66,6 +66,10 @@
             android:name=".Wisconsin"
             android:label="@string/title_activity_wisconsin" >
         </activity>
+        <activity
+            android:name=".RecipePage"
+            android:label="@string/title_activity_recipe_page" >
+        </activity>
     </application>
 
 </manifest>
