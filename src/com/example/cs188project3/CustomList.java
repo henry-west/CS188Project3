@@ -1,5 +1,6 @@
 package com.example.cs188project3;
 
+import android.app.Activity;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.widget.TextView;
 public class CustomList extends ArrayAdapter<String> {
 
 	private final FragmentActivity context;
+	private final Activity myActivty;
 	private final String[] names;
 	private final String[] descriptions;
 	private final Integer[] imageId;
@@ -21,6 +23,16 @@ public class CustomList extends ArrayAdapter<String> {
 		this.names = names;
 		this.descriptions = descriptions;
 		this.imageId = imageId;
+		this.myActivty=null;
+	}
+	public CustomList(Activity myActivity,
+			String[] names, String[] descriptions, Integer[] imageId) {
+		super(myActivity, R.layout.list_item, names);
+		this.myActivty = myActivity;
+		this.names = names;
+		this.descriptions = descriptions;
+		this.imageId = imageId;
+		this.context=null;
 	}
 
 	@Override
