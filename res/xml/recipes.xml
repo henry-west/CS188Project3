@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recipes>
+    <recipe id="Soul Food">
+        <description>The greatest food in the universe. Period.</description>
+        <time>10 minutes</time>
+        <servings>infinite</servings>
+        <ingredients>
+            <ingredient>Bacon</ingredient>
+            <ingredient>Beer</ingredient>
+            <ingredient>Cheese</ingredient>
+        </ingredients>
+        <instructions>
+            <step>1. Open Bruschi</step>
+            <step>2. Eat cheese and bacon</step>
+            <step>3. ???</step>
+            <step>4. Profit!!!</step>
+        </instructions>
+    </recipe>
+    <recipe id="Another Recipe">
+        <description>A pretty great program</description>
+        <time>10 minutes</time>
+        <servings>infinite</servings>
+        <ingredients>
+            <ingredient>Bacon</ingredient>
+            <ingredient>Beer</ingredient>
+            <ingredient>Cheese</ingredient>
+        </ingredients>
+        <instructions>
+            <step>1. Bacon</step>
+            <step>2. Eat cheese and bacon</step>
+            <step>3. Beer</step>
+        </instructions>
+    </recipe>
+</recipes>
