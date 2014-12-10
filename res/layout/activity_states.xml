@@ -6,42 +6,49 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_height="wrap_content"
-        android:textColor="#FF0000"
-        android:background="@android:color/transparent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
         android:onClick="toIowa"
-        android:text="IOWA" />
+        android:text="IOWA"
+        android:textColor="#FF0000" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_height="wrap_content"
-        android:textColor="#FF0000"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:onClick="toWisconsin"
         android:text="WISCONSIN"
-        android:onClick="toWisconsin" />
+        android:textColor="#FF0000" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_height="wrap_content"
-        android:textColor="#FF0000"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:onClick="toMinnesota"
         android:text="MINNESOTA"
-        android:onClick="toMinnesota" />
+        android:textColor="#FF0000" />
 
     <Button
         android:id="@+id/button4"
-       android:layout_width="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_height="wrap_content"
-        android:textColor="#FF0000"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
         android:onClick="toIllinois"
-        android:text="ILLINOIS" />
+        android:text="ILLINOIS"
+        android:textColor="#FF0000" />
 
 </LinearLayout>

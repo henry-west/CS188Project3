@@ -13,17 +13,17 @@
         android:id="@+id/textView1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="STAFF APPROVED"
-        android:gravity = "center"
         android:textSize="15sp" />
-    
+
     <TextView
         android:id="@+id/textView4"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="Beer and Caramelized Onion Dip"
         android:textColor="#FF0000"
-        android:gravity = "center"
         android:textSize="30sp" />
 
     <LinearLayout
@@ -42,10 +42,8 @@
                 android:id="@+id/imageButton2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/milwaukee_brats" 
-                android:onClick="toMidWestPhilosophy"/>
-
-            
+                android:onClick="toMidWestPhilosophy"
+                android:src="@drawable/milwaukee_brats" />
         </LinearLayout>
 
         <LinearLayout
@@ -58,9 +56,7 @@
                 android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/walking_tacos" 
-                android:onClick="tofavoites"/>
-            
+                android:src="@drawable/walking_tacos" />
         </LinearLayout>
     </LinearLayout>
 
@@ -68,47 +64,46 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal" >
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
-            
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#FF0000"
+                android:gravity="center"
                 android:text="Midwest Food Philosophy"
-                android:textSize="30sp"
-                android:gravity="center" />
+                android:textColor="#FF0000"
+                android:textSize="30sp" />
         </LinearLayout>
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="1">
-            
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="MENU-OF-THE-MONTH"
-                android:textSize="15sp"
-                android:gravity="center" />
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/textView3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Game Day Grub"
                 android:textColor="#FF0000"
-                android:textSize="30sp"
-                android:gravity="center" />
+                android:textSize="30sp" />
         </LinearLayout>
-        
     </LinearLayout>
 
 </LinearLayout>
