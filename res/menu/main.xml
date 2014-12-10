@@ -5,9 +5,14 @@
     <item
         android:id="@+id/search"
         android:actionViewClass="android.widget.SearchView"
-        android:icon="@drawable/search"
+        android:icon="@drawable/search_icon_64"
         android:showAsAction="collapseActionView|ifRoom"
         android:title="Search"/>
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/favorite_icon_64"
+        android:showAsAction="collapseActionView|ifRoom"
+        android:title="Favorites"/>
     
     <item
         android:id="@+id/home"

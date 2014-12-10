@@ -53,6 +53,8 @@ public class MainActivity extends Activity {
 		case R.id.bbc:
 			startActivity(new Intent(this, BBC.class));
 			return true;
+		case R.id.favorites:
+			startActivity(new Intent(this, Favorite.class));
 		default:
 			return super.onOptionsItemSelected(item);
 		}
