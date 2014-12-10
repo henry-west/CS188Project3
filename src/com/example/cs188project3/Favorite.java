@@ -26,7 +26,7 @@ public class Favorite extends Activity {
 		Integer[] pictures = {R.drawable.burger_fries_pot_pie, R.drawable.nacho_casserole, R.drawable.chicken_pot_pie, R.drawable.chicken_pot_pie};
 
 		CustomList adapter = new CustomList(Favorite.this, sides, descriptions, pictures);
-		ListView list1 = (ListView)findViewById(R.id.listMainDishes);
+		ListView list1 = (ListView)findViewById(R.id.list);
 		list1.setAdapter(adapter);
 		list1.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View view, int position, long id){

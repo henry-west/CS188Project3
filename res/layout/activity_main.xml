@@ -52,7 +52,8 @@
                 android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/walking_tacos" />
+                android:src="@drawable/walking_tacos" 
+                android:onClick="tofavoites"/>
 
             <TextView
                 android:id="@+id/textView3"

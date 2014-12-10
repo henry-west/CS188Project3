@@ -16,6 +16,7 @@ public class CustomList extends ArrayAdapter<String> {
 	private final String[] names;
 	private final String[] descriptions;
 	private final Integer[] imageId;
+	private final boolean fragment;
 	public CustomList(FragmentActivity context,
 			String[] names, String[] descriptions, Integer[] imageId) {
 		super(context, R.layout.list_item, names);
@@ -24,6 +25,7 @@ public class CustomList extends ArrayAdapter<String> {
 		this.descriptions = descriptions;
 		this.imageId = imageId;
 		this.myActivty=null;
+		fragment =true;
 	}
 	public CustomList(Activity myActivity,
 			String[] names, String[] descriptions, Integer[] imageId) {
@@ -33,11 +35,17 @@ public class CustomList extends ArrayAdapter<String> {
 		this.descriptions = descriptions;
 		this.imageId = imageId;
 		this.context=null;
+		fragment =false;
+
 	}
 
 	@Override
 	public View getView(int position, View view, ViewGroup parent) {
-		LayoutInflater inflater = context.getLayoutInflater();
+		LayoutInflater inflater;
+		if(fragment)
+		{		 inflater = context.getLayoutInflater();}
+		else {	inflater =  myActivty.getLayoutInflater();
+}
 		View rowView= inflater.inflate(R.layout.list_item, null, true);
 
 		TextView name = (TextView) rowView.findViewById(R.id.name);

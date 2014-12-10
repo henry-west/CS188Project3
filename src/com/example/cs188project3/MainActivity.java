@@ -19,6 +19,11 @@ public class MainActivity extends Activity {
 		Intent intent = new Intent(this, MidwestPhilosophy.class);
 		startActivity(intent);
 	}
+	public void tofavoites(View view){
+		Intent intent = new Intent(this, Favorite.class);
+		startActivity(intent);
+	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
