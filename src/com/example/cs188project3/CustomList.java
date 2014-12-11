@@ -1,3 +1,7 @@
+/*
+ * This page is for setting up the layout of the list view for each recipe
+ * It was based off the tutorial at this website: http://www.learn2crack.com/2013/10/android-custom-listview-images-text-example.html
+ */
 package com.example.cs188project3;
 
 import android.app.Activity;
@@ -17,6 +21,7 @@ public class CustomList extends ArrayAdapter<String> {
 	private final String[] descriptions;
 	private final Integer[] imageId;
 	private final boolean fragment;
+	
 	public CustomList(FragmentActivity context,
 			String[] names, String[] descriptions, Integer[] imageId) {
 		super(context, R.layout.list_item, names);
@@ -27,6 +32,7 @@ public class CustomList extends ArrayAdapter<String> {
 		this.myActivty=null;
 		fragment =true;
 	}
+	
 	public CustomList(Activity myActivity,
 			String[] names, String[] descriptions, Integer[] imageId) {
 		super(myActivity, R.layout.list_item, names);

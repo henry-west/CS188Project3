@@ -20,6 +20,16 @@ public class MainActivity extends Activity {
 		startActivity(intent);
 	}
 	
+	public void toGrilledCorn(View view) {
+		Intent intent = new Intent(this, GrilledCorn.class);
+		startActivity(intent);
+	}
+	
+	public void toPotluck(View view) {
+		Intent intent = new Intent(this, Potluck.class);
+		startActivity(intent);
+	}
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -51,6 +61,7 @@ public class MainActivity extends Activity {
 			return true;
 		case R.id.favorites:
 			startActivity(new Intent(this, Favorite.class));
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}

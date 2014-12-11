@@ -1,3 +1,6 @@
+/*
+ * This page contains the tabs for the Minnesota food
+ */
 package com.example.cs188project3;
 
 import java.util.Locale;
@@ -44,13 +47,29 @@ public class Minnesota extends FragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+				// Handle action bar item
+				switch(item.getItemId()) {
+				case  R.id.home:
+					startActivity(new Intent(this, MainActivity.class));
+					return true;
+				case R.id.states:
+					startActivity(new Intent(this, States.class));
+					return true;
+				case R.id.holidays:
+					startActivity(new Intent(this, Holidays.class));
+					return true;
+				case R.id.potluck:
+					startActivity(new Intent(this, Potluck.class));
+					return true;
+				case R.id.bbc:
+					startActivity(new Intent(this, BBC.class));
+					return true;
+				case R.id.favorites:
+					startActivity(new Intent(this, Favorite.class));
+					return true;
+				default:
+					return super.onOptionsItemSelected(item);
+				}
 	}
 	
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
@@ -150,6 +169,8 @@ public class Minnesota extends FragmentActivity {
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.appetizers, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.corn, R.drawable.favorites};
@@ -197,6 +218,8 @@ public class Minnesota extends FragmentActivity {
 			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
 			
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Side 1", "Side 2", "Side 3"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.corn, R.drawable.favorites};
@@ -240,7 +263,9 @@ public class Minnesota extends FragmentActivity {
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
-					false);			
+					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"TATER TOT HOTDISH", "JUICY LUCY", "LUTEFISK", "MINNESOTA WILD RICE SOUP"};
 			String[] descriptions = getResources().getStringArray(R.array.minnesota_descriptions);
 			Integer[] pictures = {R.drawable.tater_tot_hotdish, R.drawable.juicy_lucy, R.drawable.lutefisk, R.drawable.minnesota_wild_rice_soup};
@@ -292,6 +317,8 @@ public class Minnesota extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.desserts, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.corn, R.drawable.favorites};

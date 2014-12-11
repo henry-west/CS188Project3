@@ -1,8 +1,12 @@
+/*
+ * This page contains tabs for the recipe for Grilled Corn
+ */
 package com.example.cs188project3;
 
 
 import java.util.Locale;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -36,20 +40,36 @@ public class GrilledCorn extends FragmentActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.walking_taco, menu);
+		getMenuInflater().inflate(R.menu.grilled_corn, menu);
 		return true;
 	}
 
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
-			return true;
-		}
-		return super.onOptionsItemSelected(item);
+				// Handle action bar item
+				switch(item.getItemId()) {
+				case  R.id.home:
+					startActivity(new Intent(this, MainActivity.class));
+					return true;
+				case R.id.states:
+					startActivity(new Intent(this, States.class));
+					return true;
+				case R.id.holidays:
+					startActivity(new Intent(this, Holidays.class));
+					return true;
+				case R.id.potluck:
+					startActivity(new Intent(this, Potluck.class));
+					return true;
+				case R.id.bbc:
+					startActivity(new Intent(this, BBC.class));
+					return true;
+				case R.id.favorites:
+					startActivity(new Intent(this, Favorite.class));
+					return true;
+				default:
+					return super.onOptionsItemSelected(item);
+				}
 	}
 	
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {

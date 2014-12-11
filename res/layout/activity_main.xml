@@ -7,7 +7,8 @@
         android:id="@+id/imageView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/beer_caramelized_onion_dip" />
+        android:src="@drawable/beer_caramelized_onion_dip"
+        android:onClick="toGrilledCorn" />
 
     <TextView
         android:id="@+id/textView1"
@@ -56,7 +57,8 @@
                 android:id="@+id/imageButton3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/walking_tacos" />
+                android:src="@drawable/walking_tacos"
+                 android:onClick="toPotluck" />
         </LinearLayout>
     </LinearLayout>
 
@@ -102,7 +104,8 @@
                 android:gravity="center"
                 android:text="Game Day Grub"
                 android:textColor="#FF0000"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                />
         </LinearLayout>
     </LinearLayout>
 

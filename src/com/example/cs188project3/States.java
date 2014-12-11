@@ -1,3 +1,6 @@
+/*
+ * This page contains buttons for navigating to different states' recipes
+ */
 package com.example.cs188project3;
 
 import android.app.Activity;
@@ -63,6 +66,9 @@ public class States extends Activity {
 					return true;
 				case R.id.bbc:
 					startActivity(new Intent(this, BBC.class));
+					return true;
+				case R.id.favorites:
+					startActivity(new Intent(this, Favorite.class));
 					return true;
 				default:
 					return super.onOptionsItemSelected(item);

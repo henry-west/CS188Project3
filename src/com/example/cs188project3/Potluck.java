@@ -1,3 +1,6 @@
+/*
+ * This page contains tabs for the "Potluck" category
+ */
 package com.example.cs188project3;
 
 import java.util.Locale;
@@ -61,6 +64,9 @@ public class Potluck extends FragmentActivity {
 					return true;
 				case R.id.bbc:
 					startActivity(new Intent(this, BBC.class));
+					return true;
+				case R.id.favorites:
+					startActivity(new Intent(this, Favorite.class));
 					return true;
 				default:
 					return super.onOptionsItemSelected(item);
@@ -164,6 +170,8 @@ public class Potluck extends FragmentActivity {
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.appetizers, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3", "Appetizer 4"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};
@@ -211,6 +219,8 @@ public class Potluck extends FragmentActivity {
 			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
 
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Side 1", "Side 2", "Side 3", "Side 4"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};
@@ -254,7 +264,9 @@ public class Potluck extends FragmentActivity {
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
-					false);			
+					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"BURGER AND FRIES POT PIE", "NACHO CASSEROLE", "CHICKEN POT PIE", "BBQ, BEEF, AND BISCUIT CASSEROLE"};
 			String[] descriptions = getResources().getStringArray(R.array.potluck_descriptions);
 			Integer[] pictures = {R.drawable.burger_fries_pot_pie, R.drawable.nacho_casserole, R.drawable.chicken_pot_pie, R.drawable.chicken_pot_pie};
@@ -306,6 +318,8 @@ public class Potluck extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.desserts, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3", "Dessert 4"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};

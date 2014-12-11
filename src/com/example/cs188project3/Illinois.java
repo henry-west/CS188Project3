@@ -1,3 +1,6 @@
+/*
+ * This page contains the tabs for the Illinois food
+ */
 package com.example.cs188project3;
 
 import java.util.Locale;
@@ -24,7 +27,7 @@ import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 
 public class Illinois extends FragmentActivity {
-	
+
 	ViewPager myViewPager;
 	SectionsPagerAdapter mSectionsPagerAdapter;
 
@@ -32,7 +35,7 @@ public class Illinois extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_illinois);
-		
+
 		mSectionsPagerAdapter = new SectionsPagerAdapter(this, myViewPager);
 
 		// Set up the ViewPager with the sections adapter.
@@ -50,15 +53,31 @@ public class Illinois extends FragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
-		// automatically handle clicks on the Home/Up button, so long
-		// as you specify a parent activity in AndroidManifest.xml.
-		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		// Handle action bar item
+		switch(item.getItemId()) {
+		case  R.id.home:
+			startActivity(new Intent(this, MainActivity.class));
 			return true;
+		case R.id.states:
+			startActivity(new Intent(this, States.class));
+			return true;
+		case R.id.holidays:
+			startActivity(new Intent(this, Holidays.class));
+			return true;
+		case R.id.potluck:
+			startActivity(new Intent(this, Potluck.class));
+			return true;
+		case R.id.bbc:
+			startActivity(new Intent(this, BBC.class));
+			return true;
+		case R.id.favorites:
+			startActivity(new Intent(this, Favorite.class));
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
 		}
-		return super.onOptionsItemSelected(item);
 	}
-	
+
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
 		public SectionsPagerAdapter(FragmentActivity fm, ViewPager pager) {
@@ -108,12 +127,12 @@ public class Illinois extends FragmentActivity {
 
 				String title2 = "Sides and Salads";
 				return title2;
-				
+
 			case 2:
 
 				String title3 = "Main Courses";
 				return title3;
-				
+
 			case 3:
 
 				String title4 = "Desserts";
@@ -129,7 +148,7 @@ public class Illinois extends FragmentActivity {
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
@@ -150,32 +169,34 @@ public class Illinois extends FragmentActivity {
 
 		public PlaceholderFragment1() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.appetizers, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.corn, R.drawable.favorites};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listAppetizers);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}
-		
-		
+
+
 
 	}
-	
+
 	public static class PlaceholderFragment2 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
@@ -196,31 +217,33 @@ public class Illinois extends FragmentActivity {
 
 		public PlaceholderFragment2() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
-			
+
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Side 1", "Side 2", "Side 3"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.corn, R.drawable.favorites};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listSides);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}
 
 	}
-	
+
 	public static class PlaceholderFragment3 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
@@ -241,20 +264,22 @@ public class Illinois extends FragmentActivity {
 
 		public PlaceholderFragment3() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
-					false);			
+					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"THE REAL CHICAGO DEEP DISH PIZZA DOUGH", "DEEP-DISH SAUSAGE PATTY PIZZA", "CHICAGO-STYLE HOT DOG", "PIZZA SPAGHETTI CASSEROLE", "BOHEMIAN PORK ROAST"};
 			String[] descriptions = getResources().getStringArray(R.array.illinois_descriptions);
 			Integer[] pictures = {R.drawable.deep_dish_pizza_dough, R.drawable.sausage_patty_pizza, R.drawable.chicago_hot_dog, R.drawable.pizza_spaghetti_casserole, R.drawable.bohemian_pork_roast};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
-			
+
 			list1.setAdapter(adapter);
-			
+
 			list1.setOnItemClickListener(new OnItemClickListener() {
 				public void onItemClick(AdapterView<?> parent, View view, int position, long id){
 					Intent intent = new Intent(view.getContext(), GrilledCorn.class);
@@ -265,13 +290,13 @@ public class Illinois extends FragmentActivity {
 		}
 
 	}
-	
+
 	public static class PlaceholderFragment4 extends Fragment {
 		/**
 		 * The fragment argument representing the section number for this
 		 * fragment.
 		 */
-		
+
 		private static final String ARG_SECTION_NUMBER = "section_number";
 
 		/**
@@ -292,18 +317,20 @@ public class Illinois extends FragmentActivity {
 
 		public PlaceholderFragment4() {
 		}
-		
+
 		@Override
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.desserts, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.corn, R.drawable.favorites};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listDesserts);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}

@@ -1,3 +1,6 @@
+/*
+ * This page contains the tabs for the "Holidays" category
+ */
 package com.example.cs188project3;
 
 import java.util.Locale;
@@ -46,26 +49,29 @@ public class Holidays extends FragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
-				// Handle action bar item
-				switch(item.getItemId()) {
-				case  R.id.home:
-					startActivity(new Intent(this, MainActivity.class));
-					return true;
-				case R.id.states:
-					startActivity(new Intent(this, States.class));
-					return true;
-				case R.id.holidays:
-					
-					return true;
-				case R.id.potluck:
-					startActivity(new Intent(this, Potluck.class));
-					return true;
-				case R.id.bbc:
-					startActivity(new Intent(this, BBC.class));
-					return true;
-				default:
-					return super.onOptionsItemSelected(item);
-				}
+		// Handle action bar item
+		switch(item.getItemId()) {
+		case  R.id.home:
+			startActivity(new Intent(this, MainActivity.class));
+			return true;
+		case R.id.states:
+			startActivity(new Intent(this, States.class));
+			return true;
+		case R.id.holidays:
+
+			return true;
+		case R.id.potluck:
+			startActivity(new Intent(this, Potluck.class));
+			return true;
+		case R.id.bbc:
+			startActivity(new Intent(this, BBC.class));
+			return true;
+		case R.id.favorites:
+			startActivity(new Intent(this, Favorite.class));
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
 
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
@@ -165,12 +171,14 @@ public class Holidays extends FragmentActivity {
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.appetizers, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Appetizer 1", "Appetizer 2", "Appetizer 3", "Appetizer 4"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listAppetizers);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}
@@ -211,13 +219,14 @@ public class Holidays extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
-
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Side 1", "Side 2", "Side 3", "Side 4"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listSides);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}
@@ -255,13 +264,15 @@ public class Holidays extends FragmentActivity {
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
-					false);			
+					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Green Bean Casserole", "Au Gratin Potatoes", "Sweet Potato Casserole", "Holiday Lasagna"};
 			String[] descriptions = getResources().getStringArray(R.array.holidays_descriptions);
 			Integer[] pictures = {R.drawable.green_bean_casserole, R.drawable.au_gratin_potatoes, R.drawable.sweet_potato_casserole, R.drawable.holiday_lasagna};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
-			
+
 			list1.setAdapter(adapter);
 
 			list1.setOnItemClickListener(new OnItemClickListener() {
@@ -307,12 +318,14 @@ public class Holidays extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.desserts, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"Dessert 1", "Dessert 2", "Dessert 3", "Dessert 4"};
 			String[] descriptions = {"Description 1", "Description 2", "Description 3", "Description 4"};
 			Integer[] pictures = {R.drawable.pizza, R.drawable.pizza, R.drawable.pizza, R.drawable.pizza};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listDesserts);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}

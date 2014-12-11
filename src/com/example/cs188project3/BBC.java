@@ -1,3 +1,6 @@
+/*
+ * This is the page that displays the tabs for the "Bacon, Beer, and Cheese" category.
+ */
 package com.example.cs188project3;
 
 import java.util.Locale;
@@ -19,7 +22,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 public class BBC extends FragmentActivity {
-	
+
 	ViewPager myViewPager;
 	SectionsPagerAdapter mSectionsPagerAdapter;
 
@@ -27,7 +30,7 @@ public class BBC extends FragmentActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_bbc);
-		
+
 		mSectionsPagerAdapter = new SectionsPagerAdapter(this, myViewPager);
 
 		// Set up the ViewPager with the sections adapter.
@@ -45,28 +48,31 @@ public class BBC extends FragmentActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle action bar item clicks here. The action bar will
-				// Handle action bar item
-				switch(item.getItemId()) {
-				case  R.id.home:
-					startActivity(new Intent(this, MainActivity.class));
-					return true;
-				case R.id.states:
-					startActivity(new Intent(this, States.class));
-					return true;
-				case R.id.holidays:
-					startActivity(new Intent(this, Holidays.class));
-					return true;
-				case R.id.potluck:
-					startActivity(new Intent(this, Potluck.class));
-					return true;
-				case R.id.bbc:
-					
-					return true;
-				default:
-					return super.onOptionsItemSelected(item);
-				}
+		// Handle action bar item
+		switch(item.getItemId()) {
+		case  R.id.home:
+			startActivity(new Intent(this, MainActivity.class));
+			return true;
+		case R.id.states:
+			startActivity(new Intent(this, States.class));
+			return true;
+		case R.id.holidays:
+			startActivity(new Intent(this, Holidays.class));
+			return true;
+		case R.id.potluck:
+			startActivity(new Intent(this, Potluck.class));
+			return true;
+		case R.id.bbc:
+
+			return true;
+		case R.id.favorites:
+			startActivity(new Intent(this, Favorite.class));
+			return true;
+		default:
+			return super.onOptionsItemSelected(item);
+		}
 	}
-	
+
 	public class SectionsPagerAdapter extends FragmentStatePagerAdapter {
 
 		public SectionsPagerAdapter(FragmentActivity fm, ViewPager pager) {
@@ -164,12 +170,14 @@ public class BBC extends FragmentActivity {
 				Bundle savedInstanceState) {
 			final View rootView = inflater.inflate(R.layout.appetizers, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"BEER-CANDIED BACON", "BEER BACON CARAMEL CORN", "BEER CARAMELIZED ONION DIP", "BACON CHEESE DIP"};
 			String[] descriptions = getResources().getStringArray(R.array.bbc_appetizer_descriptions);
 			Integer[] pictures = {R.drawable.beer_candied_bacon, R.drawable.beer_bacon_caramel_corn, R.drawable.beer_caramelized_onion_dip, R.drawable.bacon_cheese_dip};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listAppetizers);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}
@@ -211,12 +219,14 @@ public class BBC extends FragmentActivity {
 			View rootView = inflater.inflate(R.layout.sides, container,
 					false);			
 
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"CREAMY CORN WITH BACON", "SALAD WITH WARM BACON DRESSING", "CHEESY BACON RANCH POTATOES", "BACON POTATO SALAD"};
 			String[] descriptions = getResources().getStringArray(R.array.bbc_sides_descriptions);
 			Integer[] pictures = {R.drawable.creamy_corn_bacon, R.drawable.bacon_dressing, R.drawable.cheesy_bacon_ranch_potatoes, R.drawable.bacon_potato_salad};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listSides);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}
@@ -254,13 +264,15 @@ public class BBC extends FragmentActivity {
 		public View onCreateView(LayoutInflater inflater, ViewGroup container,
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.main_dishes, container,
-					false);			
+					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"BACON AND BAKED POTATO SOUP", "BEER MACARONI AND CHEESE", "BACON AND CHEESE QUICHE", "BEER, BACON AND CHEDDAR BREAD"};
 			String[] descriptions = getResources().getStringArray(R.array.bbc_main_dish_descriptions);
 			Integer[] pictures = {R.drawable.cheese_bacon_soup, R.drawable.beer_mac_cheese, R.drawable.bacon_cheese_quiche, R.drawable.beer_bacon_cheddar_bread};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listMainDishes);
-			
+
 			list1.setAdapter(adapter);
 
 			list1.setOnItemClickListener(new OnItemClickListener() {
@@ -306,12 +318,14 @@ public class BBC extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.desserts, container,
 					false);	
+			//get the names, descriptions, and pictures for each recipe and use them
+			//to populate the list view
 			String[] sides = {"MAPLE BACON DONUTS", "CHOCOLATE-COVERED BACON", "BACON CARAMEL APPLE", "BACON CHOCOLATE CHIP COOKIES"};
 			String[] descriptions = getResources().getStringArray(R.array.bbc_dessert_descriptions);
 			Integer[] pictures = {R.drawable.maple_bacon_donuts, R.drawable.choc_covered_bacon, R.drawable.bacon_caramel_apple, R.drawable.bacon_choc_cookies};
 			CustomList adapter = new CustomList(getActivity(), sides, descriptions, pictures);
 			ListView list1 = (ListView)rootView.findViewById(R.id.listDesserts);
-			
+
 			list1.setAdapter(adapter);
 			return rootView;
 		}

@@ -86,17 +86,17 @@ public final class R {
         public static final int walking_tacos=0x7f020031;
     }
     public static final class id {
-        public static final int action_settings=0x7f0a001c;
-        public static final int bbc=0x7f0a0021;
+        public static final int action_settings=0x7f0a0023;
+        public static final int bbc=0x7f0a0022;
         public static final int button1=0x7f0a0011;
         public static final int button2=0x7f0a0012;
         public static final int button3=0x7f0a0013;
         public static final int button4=0x7f0a0014;
         public static final int container=0x7f0a0003;
         public static final int description=0x7f0a0019;
-        public static final int favorites=0x7f0a0023;
-        public static final int holidays=0x7f0a001f;
-        public static final int home=0x7f0a001d;
+        public static final int favorites=0x7f0a001d;
+        public static final int holidays=0x7f0a0020;
+        public static final int home=0x7f0a001e;
         public static final int image2=0x7f0a000f;
         public static final int imageButton2=0x7f0a000a;
         public static final int imageButton3=0x7f0a000b;
@@ -109,9 +109,9 @@ public final class R {
         public static final int name=0x7f0a0018;
         public static final int pager_title_strip=0x7f0a0001;
         public static final int picture=0x7f0a0017;
-        public static final int potluck=0x7f0a0020;
-        public static final int search=0x7f0a0022;
-        public static final int states=0x7f0a001e;
+        public static final int potluck=0x7f0a0021;
+        public static final int search=0x7f0a001c;
+        public static final int states=0x7f0a001f;
         public static final int textView1=0x7f0a0008;
         public static final int textView2=0x7f0a000c;
         public static final int textView3=0x7f0a000e;
@@ -150,10 +150,10 @@ public final class R {
         public static final int summary=0x7f030017;
     }
     public static final class menu {
-        public static final int appetizers2=0x7f090000;
-        public static final int bbc=0x7f090001;
-        public static final int favorite=0x7f090002;
-        public static final int favorites=0x7f090003;
+        public static final int bbc=0x7f090000;
+        public static final int favorite=0x7f090001;
+        public static final int favorites=0x7f090002;
+        public static final int grilled_corn=0x7f090003;
         public static final int holidays=0x7f090004;
         public static final int illinois=0x7f090005;
         public static final int iowa=0x7f090006;
